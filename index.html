@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="backgroundLayer"></div>
+    <div class="content">
+        <h1>Tech fest survey form</h1>
+        <form>
+            <p style="color:orangered">* Marks the required fields</p><br />
+            <label>
+                Enter your name:<br />
+                <input type="text" value="Anonymous" class="inputBox focusBox" maxlength="50" pattern="[a-zA-Z\s]+"
+                    title="Only letters and spaces are allowed." autofocus />
+            </label>
+            <br />
+            <label>
+                Enter your email: <span>*</span><br />
+                <input type="email" class="inputBox focusBox" placeholder="Your email here" maxlength="50" required />
+            </label>
+            <br />
+            <ol type="1">
+                <li>
+                    <p>How likely is that you would recommend the event to a friend or colleague?<span>*</span></p>
+                    <div class="range">
+                        <p>Not at all likely</p>
+                        <p>Extremely likely</p>
+                    </div>
+                    <div class="rateNum">
+                        <input type="radio" id="radio0" name="q1" required />
+                        <label for="radio0">0</label>
+                        <input type="radio" id="radio1" name="q1" required />
+                        <label for="radio1">1</label>
+                        <input type="radio" id="radio2" name="q1" required />
+                        <label for="radio2">2</label>
+                        <input type="radio" id="radio3" name="q1" required />
+                        <label for="radio3">3</label>
+                        <input type="radio" id="radio4" name="q1" required />
+                        <label for="radio4">4</label>
+                        <input type="radio" id="radio5" name="q1" required />
+                        <label for="radio5">5</label>
+                        <input type="radio" id="radio6" name="q1" required />
+                        <label for="radio6">6</label>
+                        <input type="radio" id="radio7" name="q1" required />
+                        <label for="radio7">7</label>
+                        <input type="radio" id="radio8" name="q1" required />
+                        <label for="radio8">8</label>
+                        <input type="radio" id="radio9" name="q1" required />
+                        <label for="radio9">9</label>
+                        <input type="radio" id="radio10" name="q1" required />
+                        <label for="radio10">10</label>
+                    </div>
+                    <br />
+                </li>
+                <li>
+                    <p>Overall, how would you rate the event? <span>*</span></p><br />
+                    <div class="gridRadio">
+                        <span><input type="radio" name="q2" class="q2" id="excellent" required /><label
+                                for="excellent">Excellent</label></span>
+                        <span><input type="radio" name="q2" class="q2" id="fair" required /><label
+                                for="fair">Fair</label></span>
+                        <span><input type="radio" name="q2" class="q2" id="veryGood" required /><label
+                                for="veryGood">Very Good</label></span>
+                        <span><input type="radio" name="q2" class="q2" id="poor" required /><label
+                                for="poor">Poor</label></span>
+                        <span><input type="radio" name="q2" class="q2" id="good" required /><label
+                                for="good">Good</label></span>
+                    </div>
+                </li><br />
+                <li>
+                    <p>What did you like about the tech fest? <span>*</span></p><br />
+                    <textarea class="focusBox textBox" maxlength="500" required
+                        placeholder="Write in maximum 500 characters."></textarea>
+                </li><br />
+                <li>
+                    <p>What did you dislike about the tech fest? <span>*</span></p><br />
+                    <textarea class="focusBox textBox" maxlength="500" placeholder="Write in maximum 500 characters."
+                        required></textarea>
+                </li><br />
+                <li>
+                    <p>How organized was the event? <span>*</span></p><br />
+                    <div class="gridRadio">
+                        <span><input type="radio" name="q3" class="q3" id="extremelyOrg" required /><label
+                                for="extremelyOrg">Extremely organized</label></span>
+                        <span><input type="radio" name="q3" class="q3" id="notSoOrg" required /><label
+                                for="notSoOrg">Not so organized</label></span>
+                        <span><input type="radio" name="q3" class="q3" id="veryOrg" required /><label for="veryOrg">Very
+                                organized</label></span>
+                        <span><input type="radio" name="q3" class="q3" id="notAtAllOrg" required /><label
+                                for="notAtAllOrg">Not at all organized</label></span>
+                        <span><input type="radio" name="q3" class="q3" id="somewhatOrg" required /><label
+                                for="somewhatOrg">Somewhat organized</label></span>
+                    </div><br />
+                </li>
+                <li>
+                    <p>How friendly was the staff? <span>*</span></p><br />
+                    <div class="gridRadio"><span><input name="q4" type="radio" class="q4" id="extremelyfr"
+                                required /><label for="extremelyfr">Extremely friendly</label></span>
+                        <span><input type="radio" name="q4" class="q4" id="notSofr" required /><label for="notSofr">Not
+                                so friendly</label></span>
+                        <span><input type="radio" name="q4" class="q4" id="veryfr" required /><label for="veryfr">Very
+                                friendly</label></span>
+                        <span><input type="radio" name="q4" class="q4" id="notAtAllfr" required /><label
+                                for="notAtAllfr">Not at all friendly</label></span>
+                        <span><input type="radio" name="q4" class="q4" id="somewhatfr" required /><label
+                                for="somewhatfr">Somewhat friendly</label></span>
+                    </div><br />
+                </li>
+                <li>
+                    <p>How helpful was the staff? <span>*</span></p><br />
+                    <div class="gridRadio"><span><input type="radio" class="q5" name="q5" id="extremelyhelp"
+                                required /><label for="extremelyhelp">Extremely helpful</label></span>
+                        <span><input type="radio" class="q5" name="q5" id="notSohelp" required /><label
+                                for="notSohelp">Not so helpful</label></span>
+                        <span><input type="radio" class="q5" name="q5" id="veryhelp" required /><label
+                                for="veryhelp">Very helpful</label></span>
+                        <span><input type="radio" class="q5" name="q5" id="notAtAllhelp" required /><label
+                                for="notAtAllhelp">Not at all helpful</label></span>
+                        <span><input type="radio" class="q5" name="q5" id="somewhathelp" required /><label
+                                for="somewhathelp">Somewhat helpful</label></span>
+                    </div><br />
+                </li>
+                <li>
+                    <p>Prior to the event, how much of the information that you needed did you get? <span>*</span></p>
+                    <br />
+                    <div class="gridRadio"><span><input type="radio" class="q6" name="q6" id="allInfo" required /><label
+                                for="allInfo">All of the information</label></span>
+                        <span><input type="radio" class="q6" name="q6" id="mostInfo" required /><label
+                                for="mostInfo">Most of the information</label></span>
+                        <span><input type="radio" class="q6" name="q6" id="someInfo" required /><label
+                                for="someInfo">Some of the information</label></span>
+                        <span><input type="radio" class="q6" name="q6" id="littleInfo" required /><label
+                                for="littleInfo">A little of the information</label></span>
+                        <span><input type="radio" class="q6" name="q6" id="noInfo" required /><label for="noInfo">None
+                                of the information</label></span>
+                    </div><br />
+                </li>
+                <li>
+                    <p>How relevant were the sponsor booths to your interest? <span>*</span></p><br />
+                    <div class="range">
+                        <p>Irrelevant</p>
+                        <p>Very relevant</p>
+                    </div>
+                    <div class="rateNum">
+                        <input type="radio" id="Radio0" name="q9" required />
+                        <label for="Radio0">0</label>
+                        <input type="radio" id="Radio1" name="q9" required />
+                        <label for="Radio1">1</label>
+                        <input type="radio" id="Radio2" name="q9" required />
+                        <label for="Radio2">2</label>
+                        <input type="radio" id="Radio3" name="q9" required />
+                        <label for="Radio3">3</label>
+                        <input type="radio" id="Radio4" name="q9" required />
+                        <label for="Radio4">4</label>
+                        <input type="radio" id="Radio5" name="q9" required />
+                        <label for="Radio5">5</label>
+                        <input type="radio" id="Radio6" name="q9" required />
+                        <label for="Radio6">6</label>
+                        <input type="radio" id="Radio7" name="q9" required />
+                        <label for="Radio7">7</label>
+                        <input type="radio" id="Radio8" name="q9" required />
+                        <label for="Radio8">8</label>
+                        <input type="radio" id="Radio9" name="q9" required />
+                        <label for="Radio9">9</label>
+                        <input type="radio" id="Radio10" name="q9" required />
+                        <label for="Radio10">10</label>
+                    </div><br />
+                </li>
+                <li>
+                    <p>Is there anything else you'd like to share about the event?</p><br />
+                    <textarea class="focusBox textBox" maxlength="500"
+                        placeholder="Write in maximum 500 characters."></textarea>
+                </li>
+            </ol><br />
+            <div class="buttons"><button type="reset" id="reset">Reset</button>
+                <button style="margin-left: 20px;" type="submit" id="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

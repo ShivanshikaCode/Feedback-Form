@@ -1,0 +1,134 @@
+*{
+    border:0px;
+    padding:0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-size:1.05rem;
+    font-family: "IBM Plex sans";
+    color:#e0e1dd;
+}
+form{
+    background-color:rgba(25,24,22,0.75);
+    padding:35px;
+    margin:0px 5px 0px 5px;
+    box-shadow:0px 0px 10px burlywood;
+    border-radius: 1rem;
+}
+h1{
+    text-align: center;
+}
+.content{
+    display:grid;
+    grid-template-columns: minmax(10rem,auto);
+    grid-template-rows: auto auto;
+    justify-content: center;
+    position: absolute;
+    top:2%;
+    right:0.1%;
+    width:98.5vw;
+    place-items:center;
+}
+.backgroundLayer{
+    min-height:290vh;
+    background-image: url("tech\ fest\ img\ survey\ form\ 4.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    filter:blur(3px);
+}
+@media (max-width:900px) and (min-width:800px){
+    .backgroundLayer{
+        min-height:255vh;
+    }
+}
+@media (max-width:400px){
+    .backgroundLayer{
+        min-height:312vh;
+    }
+}
+
+span{
+    color:orangered
+}
+.inputBox{
+    margin-top:10px;
+    margin-bottom: 15px;
+    height:35px;
+    border-radius:20px;
+    width:250px;
+    padding-left:10px;
+    color:#252422;
+    font-weight: 500;
+}
+.focusBox:focus{
+    outline:3px solid #eb5e28;
+}
+.range{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top:15px;
+    margin-bottom:5px;
+}
+.rateNum{
+    display:grid;
+    grid-template-columns: repeat(11,1fr);
+    grid-template-rows:minmax(10px,50px);
+    gap:0px;
+}
+.rateNum > input{
+    display:none;
+}
+.rateNum > label{
+    min-width:auto;
+    min-height:auto;
+    background-color: #ccc5b9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border:1px solid #fffcf2;
+    color:#252422;
+    cursor:pointer;
+}
+label{
+    cursor:pointer;
+}
+.rateNum>input:checked+label{
+    background-color: #eb5e28;
+    color:#fffcf2
+}
+.gridRadio{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:repeat(3,auto);
+    gap:10px;
+
+}
+.gridRadio > input{
+  transform:scale(1.5);
+}
+.textBox{
+    border-radius:0.5rem;
+    color:#252422;
+    font-weight: 500;
+    width:99%;
+    padding:0px 5px 0px 5px
+}
+button{
+    background-color: #eb5e28;
+    color:white;
+    font-weight: 500;
+    padding:12px;
+    border-radius: 0.5rem;
+    cursor:pointer;
+}
+button:hover{
+    background-color:#fffcf2;
+    color:#252422;
+    font-weight: 500;
+    border:2px solid #eb5e28;
+}
